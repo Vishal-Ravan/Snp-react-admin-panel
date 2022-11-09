@@ -33,8 +33,8 @@ const AboutPage = () => {
 
                     
                 </div>
-                <footer className="footer text-center"> 2021 © Ample Admin brought to you by <a
-                    href="https://www.wrappixel.com/">wrappixel.com</a>
+                <footer className="footer text-center"> 2022 © Admin Panel brought to you by <a
+                    href="https://https://www.webnmobappssolutions.com">webnmobappssolutions.com</a>
                 </footer>
             </div>
         </>

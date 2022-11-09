@@ -23,65 +23,74 @@ const ManageLocation = () => {
     ]
     return (
         <>
-            <div className="container-fluid add-location">
-                <div className="booking-wrapper">
-                    <div className="row">
-                        <div className="col-md-5"><h2>Manage Location</h2></div>
-                        <div className="col-md-3">
-                            <div className="booking-search">
-                                <input type="text" />
-
-                                <button><i className="fa fa-search" aria-hidden="true"></i></button>
-
+            <div className="container-fluid ">
+                <div className="add-location">
+                    <div className="booking-wrapper">
+                        <div className="row">
+                            <div className="col-md-5">
+                                <div className="heading-top" >
+                                    <h2>Manage Location</h2>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-md-2 ">
-                            <div className="boots">
-                                <BootstrapDialog />
+                            <div className="col-md-3">
+                                <div className="table-data-search-box-manage">
+                                    <div className="search-bar" >
+                                        <input type="text" className="searchTerm-input" placeholder="Search" />
+                                        <button type="submit" className="searchButtons">
+                                            <i className="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-md-2 ">
-                            <button className="Export-btn-managelocation">
-                                Export
-                            </button>
+                            <div className="col-md-2 ">
+                                <div className="boots">
+                                    <BootstrapDialog />
+                                </div>
+                            </div>
+                            <div className="col-md-2">
+                                <button href="#/app/add-admin" class="head-button">Export</button>
+                            </div>
                         </div>
                     </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Sr No.</th>
+                                <th scope="col">Parking Location</th>
+                                <th scope="col">Action</th>
+                                <th scope="col">Active/Inactive</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                data.map((item) => (
+                                    <tr>
+                                        <th scope="row">{item.id}</th>
+                                        <td>Noida59 kirtimaan ,1stflor</td>
+                                        <td>
+                                            <Link className="mange-admins-edit-btn"><i className="fas fa-edit"></i></Link>
+                                            <Link className="mange-admins-dlt-btn">                       <DeleteForever style={{ color: '#FF5C93' }} />
+                                            </Link></td>
+                                        <td>
+                                            <BootstrapSwitchButton
+                                                onlabel='Active'
+                                                width={100}
+                                                offlabel='Inactive'
+                                                onstyle="success"
+                                                onChange={() => {
+                                                    setActiveInactive(!activeInactive);
+                                                }}
+                                            />
+                                        </td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
                 </div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Sr No.</th>
-                            <th scope="col">Parking Location</th>
-                            <th scope="col">Action</th>
-                            <th scope="col">Active/Inactive</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            data.map((item) => (
-                                <tr>
-                                    <th scope="row">{item.id}</th>
-                                    <td>Noida59 kirtimaan ,1stflor</td>
-                                    <td>
-                                        <Link className="mange-admins-edit-btn"><i className="fas fa-edit"></i></Link>
-                                        <Link className="mange-admins-dlt-btn">                       <DeleteForever style={{ color: '#FF5C93' }} />
-                                        </Link></td>
-                                    <td>
-                                        <BootstrapSwitchButton
-                                            onlabel='Active'
-                                            width={100}
-                                            offlabel='Inactive'
-                                            onstyle="success"
-                                            onChange={() => {
-                                                setActiveInactive(!activeInactive);
-                                            }}
-                                        />
-                                    </td>
-                                </tr>
-                            ))
-                        }
-                    </tbody>
-                </table>
+                <footer className="footer text-center"> 2022 ©Admin Panel brought to you by <a
+                    href="https://https://www.webnmobappssolutions.com">webnmobappssolutions.com</a>
+                </footer>
             </div>
         </>
     )

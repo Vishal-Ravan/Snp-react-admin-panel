@@ -16,18 +16,25 @@ const ManageMerchants = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="application-detail-heading-area" style={{ position: "relative", padding: "10px", top: "20px" }} >
-                                <h2>Manage Coustomers</h2>
-                                <a className="send-notifications-btn">
-                                    Export
-                                </a>
-                            </div>
-                            <div className="table-data-search-box" >
-                                <div className="search">
-                                    <input type="text" className="searchTerm" placeholder="Search" />
-                                    <button type="submit" className="searchButton">
-                                        <i className="fa fa-search" aria-hidden="true"></i>
-                                    </button>
+                        <div className="row">
+                                <div className="col-md-7">
+                                    <div className="heading-top" >
+                                        <h2>Manage Coustomers</h2>
+                                    </div>
+                                </div>
+
+                                <div className="col-md-3">
+                                    <div className="table-data-search-box-manage">
+                                        <div className="search-bar" >
+                                            <input type="text" className="searchTerm-input" placeholder="Search" />
+                                            <button type="submit" className="searchButtons">
+                                                <i className="fa fa-search" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-2">
+                                    <button href="#/app/add-admin" class="head-button">Export</button>
                                 </div>
                             </div>
                             <div className="manage-admins-main-area">
@@ -80,8 +87,8 @@ const ManageMerchants = () => {
                         </div>
                     </div>
                 </div>
-                <footer className="footer text-center"> 2021 © Ample Admin brought to you by <a
-                    href="https://www.wrappixel.com/">wrappixel.com</a>
+                <footer className="footer text-center"> 2022 © Admin Panel brought to you by <a
+                    href="https://https://www.webnmobappssolutions.com">webnmobappssolutions.com</a>
                 </footer>
             </div>
         </>

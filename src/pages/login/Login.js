@@ -100,7 +100,7 @@ function Login(props) {
           </React.Fragment>
         </div>
         <Typography color="primary" className={classes.copyright}>
-          © {new Date().getFullYear()} <a style={{ textDecoration: 'none', color: 'inherit' }} href="#" rel="noopener noreferrer" target="_blank">VamoId</a>, LLC. All rights reserved.
+          © {new Date().getFullYear()} <a style={{ textDecoration: 'none', color: 'inherit' }} href="#" rel="noopener noreferrer" target="_blank">SNP</a>, LLC. All rights reserved.
         </Typography>
       </div>
     </Grid>

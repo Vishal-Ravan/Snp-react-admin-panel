@@ -12,7 +12,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import CloseIcon from '@mui/icons-material/Close';
-import Typography from '@mui/material/Typography';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogContent-root': {
@@ -92,9 +91,6 @@ export default function CustomizedDialogs() {
     const handleClose = () => {
         setOpen(false);
     };
-
-    const [value, setValue] = React.useState();
-
 
     return (
         <div>

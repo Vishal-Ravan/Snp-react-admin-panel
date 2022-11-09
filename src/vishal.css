@@ -64,10 +64,7 @@
     border: 1px solid #0e2259 !important;
 }
 
-.send-notifications-btn {
-    background-color: #0e2259 !important;
 
-}
 
 .mange-admins-edit-btn i {
     color: #4e4e4c !important;
@@ -129,8 +126,12 @@ a.mange-admins-dlt-btn svg.MuiSvgIcon-root {
 
 /* ADD LOCATION%%%%%%%%%%%%%%%%%%%%%%% */
 .add-location {
-    padding: 50px 30px;
+    padding: 25px 14px;
 
+}
+
+.container-fluid {
+    /* padding: 0 35px !important; */
 }
 
 .add-location table {
@@ -138,12 +139,7 @@ a.mange-admins-dlt-btn svg.MuiSvgIcon-root {
 
 }
 
-.add-location h2 {
-    font-size: 20px;
-    font-weight: 500;
-    padding: 20px;
-    top: 20px;
-}
+
 
 .add-location table th {
     text-align: center;
@@ -196,17 +192,7 @@ tr {
     font-size: 15px;
 }
 
-.boots button {
-    height: 30px;
-    background-color: #0e2259;
-    border: 1px solid #0e2259;
-    text-align: center;
-    color: #fff;
-    outline: none;
-    border-radius: 5px !important;
-    cursor: pointer;
-    font-size: 15px;
-}
+
 
 .css-hlj6pa-MuiDialogActions-root {
     justify-content: space-between !important;
@@ -225,6 +211,7 @@ tr {
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
     color: #ffffff !important;
     outline: none !important;
+    height: 30px;
     background-color: #0e2259 !important;
 }
 
@@ -278,21 +265,9 @@ tr {
 
 }
 
-.booking-search {
-    display: flex;
-}
 
-.booking-search input {
-    width: 100%;
-    border: 1px solid #0e2259;
-    border-right: none;
-    padding: 5px;
-    height: 30px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    color: #3e3e3e;
-    font-size: 14px;
-}
+
+
 
 [role=tooltip].popup-content {
     left: 564.75px !important;
@@ -461,35 +436,11 @@ button#dropdown-basic {
 
 
 /* bookig Search ^%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-.booking-search {
-    display: flex;
-    align-items: center;
-}
 
-.booking-search input {
-    width: 100%;
-    border: 1px solid #0e2259;
-    border-right: none;
-    padding: 5px;
-    height: 30px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    color: #3e3e3e;
-    font-size: 14px;
 
-}
 
-.booking-search button {
-    width: 40px;
-    height: 30px;
-    border: 1px solid #0e2259;
-    background: #0e2259;
-    text-align: center;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 15px;
-}
+
+
 
 .bookings-snp {
     display: flex;
@@ -627,9 +578,7 @@ a:hover {
 
 
 /* manage customer&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
-.application-detail-heading-area .send-notifications-btn {
-    top: 15px;
-}
+
 
 .table-data-search-box {
     top: 118px !important;
@@ -707,16 +656,134 @@ p.MuiTypography-root.makeStyles-profileMenuLink-30.MuiTypography-body1 {
     border-radius: 4px;
     letter-spacing: 0.02857em;
     text-transform: uppercase;
-   
+
 }
 
 /* formcontrol Select ^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-.form-select:focus{
+.form-select:focus {
     box-shadow: none;
 }
-select.form-select{
+
+select.form-select {
     color: rgb(120 120 120);
 }
-.form-select:hover{
+
+.form-select:hover {
     border: 1px solid black !important;
+}
+
+.MuiList-padding {
+    padding-top: 0 !important;
+}
+
+
+/* all Heading Style &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+
+.heading-top h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.table-data-search-box-manage input {
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #3e3e3e;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #0e2259;
+}
+
+.table-data-search-box-manage button {
+    height: 30px;
+    background-color: #0e2259;
+    border: 1px solid #0e2259;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.head-button {
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #0e2259;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;}
+
+.head-button a {
+    color: #fff;
+}
+
+.col-md-2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.col-md-3 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.col-md-7 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.application-detail-heading-area h2{
+    margin: 0 !important;
+}
+.container-fluid{
+    background-color: #edf1f5 !important;
+}
+/* table */
+.manage-admins-main-area{
+    padding: 0px 0px 30px 0px !important;
+}
+body{
+    background-color: #edf1f5 !important;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: -90px;
+}
+.css-wjh20t-MuiPagination-ul{
+    justify-content: flex-end;
+}
+.application-detail-heading-area{
+    justify-content: center;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
+    color: #0e2259 !important;
+}
+.makeStyles-search-11{
+    background-color: rgb(228, 228, 228) !important;
+    color: #0e2259;
+}
+.makeStyles-search-11:hover{
+    background-color: transparent !important;
+    border: 1px solid #0e2259;
+
+}
+.css-i4bv87-MuiSvgIcon-root{}
+
+/* khjdhjh */
+
+.makeStyles-linkIconActive-115{
+    color: #0e2259 !important;
+}
+.makeStyles-linkIcon-114{
+    color: #0e2259 !important;
 }

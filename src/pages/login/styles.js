@@ -13,8 +13,8 @@ export default makeStyles(theme => ({
   },
   logotypeContainer: {
     //backgroundColor: theme.palette.primary.main,
-    //backgroundColor: "",
-    backgroundImage: "linear-gradient(#0e2259 , #f6f7ff) !important",
+    backgroundColor: "#fff",
+    // backgroundImage: "linear-gradient(#0e2259 , #f6f7ff) !important",
     width: "60%",
     height: "100%",
     display: "flex",
@@ -30,7 +30,7 @@ export default makeStyles(theme => ({
     },
   },
   logotypeImage: {
-    width: 165,
+    width: 785,
     marginBottom: theme.spacing(4),
   },
   logotypeText: {
@@ -44,6 +44,7 @@ export default makeStyles(theme => ({
   formContainer: {
     width: "40%",
     height: "100%",
+    backgroundImage: "linear-gradient(#0e2259 , #f6f7ff) !important",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -122,16 +123,8 @@ export default makeStyles(theme => ({
     justifyContent: "space-between",
     alignItems: "center",
   },
-  forgetButton: {
-    textTransform: "none",
-    color: "#0e2259",
-    border: "none !important",
-    outline:"none !important",
-    fontWeight: 400,
-  },
-  loginLoader: {
-    marginLeft: theme.spacing(4),
-  },
+
+
   copyright: {
     marginTop: theme.spacing(4),
     whiteSpace: "nowrap",
@@ -145,13 +138,18 @@ export default makeStyles(theme => ({
   loginButton: {
     backgroundColor: "#0e2259",
     color: '#fff !important',
+    width:'100%',
     outline: 'none !important',
     "& a": {
       color: '#fff !important'
     },
 
   },
+  textField:{
+    padding:'10px 10px',
+  },
   textFieldUnderline: {
+   
     "& .MuiInput-underline:after": {
       borderBottomColor: "#0e2259 !important",
       borderBottom: "2px solid #0e2259 !important",

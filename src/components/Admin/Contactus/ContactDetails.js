@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {useHistory} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { URL } from "../../../url/url";
 import { toast } from "react-toastify";
 
@@ -12,9 +12,9 @@ const ContactDetails = () => {
   const [address, setAddress] = useState([]);
   const [data, getData] = useState([]);
 
-  const createContactDetails = (e)=>{
-    
-  
+  const createContactDetails = (e) => {
+
+
 
 
 
@@ -27,6 +27,7 @@ const ContactDetails = () => {
   }
 
   return (
+    <>
     <div className="container-fluid">
       <div className="row">
         <div className="col-lg-12">
@@ -48,7 +49,7 @@ const ContactDetails = () => {
                 <input
                   type="text"
                   className="form-control field"
-                 
+
                   name="holdername"
                   placeholder="Enter Phone Number"
                   autofocus=""
@@ -62,7 +63,7 @@ const ContactDetails = () => {
                   type="text"
                   className="form-control field"
                   name="holdername"
-                
+
                   placeholder="Enter Email ID"
                   autofocus=""
                   required=""
@@ -75,7 +76,7 @@ const ContactDetails = () => {
                   type="text"
                   className="form-control field"
                   name="holdername"
-               
+
                   placeholder="Enter Address"
                   autofocus=""
                   required=""
@@ -95,7 +96,12 @@ const ContactDetails = () => {
           </div>
         </div>
       </div>
+     
     </div>
+    <footer className="footer text-center"> 2022 © Admin Panel brought to you by <a
+        href="https://https://www.webnmobappssolutions.com">webnmobappssolutions.com</a>
+      </footer>
+   </>
   );
 };
 
