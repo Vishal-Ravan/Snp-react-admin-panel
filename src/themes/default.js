@@ -1,6 +1,6 @@
 import tinycolor from "tinycolor2";
 
-const primary = "#1d4fd8";
+const primary = "#0e2259";
 const secondary = "#FF5C93";
 const warning = "#FFC260";
 const success = "#3CD4A0";
@@ -64,7 +64,7 @@ const defaultTheme = {
     },
     background: {
       default: "#F6F7FF",
-      light: "#F3F5FF",
+      light: "#0e2259",
     },
   },
   customShadows: {
@@ -95,15 +95,19 @@ const defaultTheme = {
     MuiListItem: {
       root: {
         "&$selected": {
-          backgroundColor: "#F3F5FF !important",
+          backgroundColor: "#0e2259 !important",
           "&:focus": {
-            backgroundColor: "#F3F5FF",
+            backgroundColor: "#0e2259",
           },
+          "&:hover": {
+            color: 'red !important',
+            backgroundColor: 'green !important'
+          }
         },
       },
       button: {
         "&:hover, &:focus": {
-          backgroundColor: "#F3F5FF",
+          backgroundColor: "#0e2259",
         },
       },
     },

@@ -395,7 +395,7 @@ button#dropdown-basic {
 .heading-add-parking {
     font-size: 20px;
     font-weight: 500;
-    margin: 60px 0px 15px 20px;
+    margin: 0px;
 }
 
 /* customersParking Details&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
@@ -718,7 +718,8 @@ select.form-select {
     font-weight: 500;
     border-radius: 4px;
     letter-spacing: 0.02857em;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+}
 
 .head-button a {
     color: #fff;
@@ -741,49 +742,80 @@ select.form-select {
     justify-content: start;
     align-items: center;
 }
-.application-detail-heading-area h2{
+
+.application-detail-heading-area h2 {
     margin: 0 !important;
 }
-.container-fluid{
+
+.container-fluid {
     background-color: #edf1f5 !important;
 }
+
 /* table */
-.manage-admins-main-area{
+.manage-admins-main-area {
     padding: 0px 0px 30px 0px !important;
 }
-body{
+
+body {
     background-color: #edf1f5 !important;
 }
-footer{
+
+footer {
     position: absolute;
     width: 100%;
-    bottom: -90px;
+    bottom: -116px;
 }
-.css-wjh20t-MuiPagination-ul{
+
+.css-wjh20t-MuiPagination-ul {
     justify-content: flex-end;
 }
-.application-detail-heading-area{
+
+.application-detail-heading-area {
     justify-content: center;
 }
-.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
     color: #0e2259 !important;
 }
-.makeStyles-search-11{
+
+.makeStyles-search-11 {
     background-color: rgb(228, 228, 228) !important;
     color: #0e2259;
 }
-.makeStyles-search-11:hover{
+
+.makeStyles-search-11:hover {
     background-color: transparent !important;
     border: 1px solid #0e2259;
 
 }
-.css-i4bv87-MuiSvgIcon-root{}
+
+.css-i4bv87-MuiSvgIcon-root {}
 
 /* khjdhjh */
 
-.makeStyles-linkIconActive-115{
+.makeStyles-linkIconActive-115 {
     color: #0e2259 !important;
 }
-.makeStyles-linkIcon-114{
+
+.makeStyles-linkIcon-114 {
     color: #0e2259 !important;
+}
+
+.MuiButtonBase-root:hover .MuiListItemIcon-root {
+    color: #fff !important;
+}
+
+.MuiButtonBase-root:hover .MuiListItemText-root span {
+    color: #fff !important;
+}
+
+.page-wrapper {
+    position: inherit !important;
+}
+
+.input:focus {
+    outline: none !important;
+    border: 1px solid red;
+    box-shadow: 0 0 10px #719ECE;
 }

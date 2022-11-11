@@ -1,6 +1,6 @@
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 const AboutPage = () => {
- 
+
     return (
         <>
             <div className="page-wrapper" style={{ minHeight: "250px" }}>
@@ -16,14 +16,14 @@ const AboutPage = () => {
                                 <form className="send-notifications-form-area">
                                     <div className="form-group">
                                         <label>About </label>
-                                        <input type="text" className="form-control field"  name="holdername" placeholder="Enter Heading" autofocus="" required="" id="name" />
+                                        <input type="text" className="form-control field" name="holdername" placeholder="Enter Heading" autofocus="" required="" id="name" />
                                     </div>
                                     <div className="form-group">
                                         <label>Description</label>
-                                        <textarea className="form-control"  placeholder="Enter Description"></textarea>
+                                        <textarea className="form-control" placeholder="Enter Description"></textarea>
                                     </div>
                                     <div className="contact-form-submint-btn-area">
-                                        <button  className="contact-form-submint-btn">Submit</button>
+                                        <button className="contact-form-submint-btn">Submit</button>
                                     </div>
                                 </form>
                             </div>
@@ -31,7 +31,7 @@ const AboutPage = () => {
 
                     </div>
 
-                    
+
                 </div>
                 <footer className="footer text-center"> 2022 © Admin Panel brought to you by <a
                     href="https://https://www.webnmobappssolutions.com">webnmobappssolutions.com</a>

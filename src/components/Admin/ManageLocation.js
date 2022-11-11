@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import BootstrapDialog from './BootstrapDialog';
 import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 import 'reactjs-popup/dist/index.css';
+import Pagination from '@mui/material/Pagination'
+
 
 const ManageLocation = () => {
     const [activeInactive, setActiveInactive] = useState(true)
@@ -52,46 +54,51 @@ const ManageLocation = () => {
                             </div>
                         </div>
                     </div>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Sr No.</th>
-                                <th scope="col">Parking Location</th>
-                                <th scope="col">Action</th>
-                                <th scope="col">Active/Inactive</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {
-                                data.map((item) => (
-                                    <tr>
-                                        <th scope="row">{item.id}</th>
-                                        <td>Noida59 kirtimaan ,1stflor</td>
-                                        <td>
-                                            <Link className="mange-admins-edit-btn"><i className="fas fa-edit"></i></Link>
-                                            <Link className="mange-admins-dlt-btn">                       <DeleteForever style={{ color: '#FF5C93' }} />
-                                            </Link></td>
-                                        <td>
-                                            <BootstrapSwitchButton
-                                                onlabel='Active'
-                                                width={100}
-                                                offlabel='Inactive'
-                                                onstyle="success"
-                                                onChange={() => {
-                                                    setActiveInactive(!activeInactive);
-                                                }}
-                                            />
-                                        </td>
-                                    </tr>
-                                ))
-                            }
-                        </tbody>
-                    </table>
+                    <div className="manage-admins-main-area">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Sr No.</th>
+                                    <th scope="col">Parking Location</th>
+                                    <th scope="col">Action</th>
+                                    <th scope="col">Active/Inactive</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {
+                                    data.map((item) => (
+                                        <tr>
+                                            <th scope="row">{item.id}</th>
+                                            <td>Noida59 kirtimaan ,1stflor</td>
+                                            <td>
+                                                <Link className="mange-admins-edit-btn"><i className="fas fa-edit"></i></Link>
+                                                <Link className="mange-admins-dlt-btn">                       <DeleteForever style={{ color: '#FF5C93' }} />
+                                                </Link></td>
+                                            <td>
+                                                <BootstrapSwitchButton
+                                                    onlabel='Active'
+                                                    width={100}
+                                                    offlabel='Inactive'
+                                                    onstyle="success"
+                                                    onChange={() => {
+                                                        setActiveInactive(!activeInactive);
+                                                    }}
+                                                />
+                                            </td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
+                        </table>
+                        <Pagination count={10} color="primary" />
+                    </div>
+
                 </div>
-                <footer className="footer text-center"> 2022 ©Admin Panel brought to you by <a
-                    href="https://https://www.webnmobappssolutions.com">webnmobappssolutions.com</a>
-                </footer>
+
             </div>
+            <footer className="footer text-center"> 2022 ©Admin Panel brought to you by <a
+                href="https://https://www.webnmobappssolutions.com">webnmobappssolutions.com</a>
+            </footer>
         </>
     )
 }

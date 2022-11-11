@@ -16,7 +16,7 @@ const ManageMerchants = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-12">
-                        <div className="row">
+                            <div className="row">
                                 <div className="col-md-7">
                                     <div className="heading-top" >
                                         <h2>Manage Coustomers</h2>
@@ -87,10 +87,11 @@ const ManageMerchants = () => {
                         </div>
                     </div>
                 </div>
-                <footer className="footer text-center"> 2022 © Admin Panel brought to you by <a
-                    href="https://https://www.webnmobappssolutions.com">webnmobappssolutions.com</a>
-                </footer>
+
             </div>
+            <footer className="footer text-center"> 2022 © Admin Panel brought to you by <a
+                href="https://https://www.webnmobappssolutions.com">webnmobappssolutions.com</a>
+            </footer>
         </>
     );
 };

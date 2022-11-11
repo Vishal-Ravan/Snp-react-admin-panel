@@ -109,10 +109,10 @@ export default makeStyles(theme => ({
   },
   headerIcon: {
     fontSize: 28,
-    color: "rgba(255, 255, 255, 0.35)",
+    color: "#0e2259",
   },
   headerIconCollapse: {
-    color: "white",
+    color: "#0e2259",
   },
   profileMenu: {
     minWidth: 265,

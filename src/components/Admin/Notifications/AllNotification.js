@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Pagination from '@mui/material/Pagination'
 import NotificationList from '../../Admin/NotificationList'
 
 const AllNotification = () => {
@@ -70,6 +71,8 @@ const AllNotification = () => {
                     </tr>
                   </tbody>
                 </table>
+                <Pagination count={10} color="primary" />
+
               </div>
             </div>
 

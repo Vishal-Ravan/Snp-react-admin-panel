@@ -7,6 +7,7 @@ export default makeStyles(theme => ({
       backgroundColor: theme.palette.background.light,
     },
   },
+
   externalLink: {
     display: 'flex',
     justifyContent: 'center',
@@ -15,6 +16,7 @@ export default makeStyles(theme => ({
   },
   linkActive: {
     backgroundColor: theme.palette.background.light,
+
   },
   linkNested: {
     paddingLeft: 0,
@@ -28,10 +30,15 @@ export default makeStyles(theme => ({
     transition: theme.transitions.create("color"),
     width: 24,
     display: "flex",
+    color: '#0e2259 !important',
     justifyContent: "center",
+
+
   },
   linkIconActive: {
     color: theme.palette.primary.main,
+    color: '#fff !important'
+
   },
   linkText: {
     padding: 0,
@@ -39,8 +46,10 @@ export default makeStyles(theme => ({
     transition: theme.transitions.create(["opacity", "color"]),
     fontSize: 16,
   },
+
   linkTextActive: {
-    color: theme.palette.text.primary,
+    color: theme.palette.text.secondary,
+    color: '#fff'
   },
   linkTextHidden: {
     opacity: 0,
@@ -49,14 +58,14 @@ export default makeStyles(theme => ({
     paddingLeft: theme.spacing(2) + 30,
   },
   sectionTitle: {
-    marginLeft: theme.spacing(4.5),
+    marginLeft: theme.spacing(6.5),
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
   },
   divider: {
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(4),
-    height: 1,
-    backgroundColor: "#D8D8D880",
+    height: 5,
+    backgroundColor: "#red",
   },
 }));

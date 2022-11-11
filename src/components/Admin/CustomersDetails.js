@@ -1,5 +1,4 @@
-import * as Axios from "axios";
-import React, { useState, useEffect } from "react";
+import React from "react";
 const CustomersDetails = () => {
     return (
         <>
@@ -7,13 +6,13 @@ const CustomersDetails = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="application-detail-heading-area">
-                                <h2>Customer Detail</h2>
+                            <div className="heading-top" >
+                                <h2>Coustomers Details</h2>
                             </div>
                         </div>
                         <div className="col-lg-12">
                             <div className="setting-tab-detail-main-area">
-                              
+
                                 <div className="tab-content" id="myTabContent">
                                     <div
 
@@ -37,9 +36,7 @@ const CustomersDetails = () => {
                                                                 alt="user img"
                                                             />
                                                         </div>
-                                                        
                                                     </div>
-                                                    
                                                 </div>
                                             </div>
                                             <div className="col-lg-7">
@@ -69,14 +66,14 @@ const CustomersDetails = () => {
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Contact Number</label>
-                                                                   <h5> 7562939752</h5>
+                                                                    <h5> 7562939752</h5>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Gender</label>
                                                                     <h5>Male</h5>
-                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
@@ -87,7 +84,7 @@ const CustomersDetails = () => {
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Country</label>
-                                                                    
+
                                                                     <h5>India</h5>
                                                                 </div>
                                                             </div>
@@ -111,7 +108,7 @@ const CustomersDetails = () => {
                                                             </div>
                                                             <div className="col-lg-12">
                                                                 <div className="contact-form-submint-btn-area">
-                                                                   
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -120,13 +117,6 @@ const CustomersDetails = () => {
                                             </div>
                                         </div>
                                     </div>
-
-
-
-
-
-
-
                                 </div>
                             </div>
                         </div>
@@ -141,8 +131,4 @@ const CustomersDetails = () => {
         </>
     );
 };
-
 export default CustomersDetails;
-
-
-

@@ -45,7 +45,7 @@ const ManageAdmin = () => {
                                     </div>
                                 </div>
                                 <div className="col-md-2">
-                                    <button  class="head-button"><Link to={`/app/add-admin`} > Add Location</Link></button>
+                                    <button class="head-button"><Link to={`/app/add-admin`} > Add Location</Link></button>
                                 </div>
                             </div>
 
@@ -120,10 +120,11 @@ const ManageAdmin = () => {
                         </div>
                     </div>
                 </div>
-                <footer className="footer text-center"> 2022 © Admin Panel brought to you by <a
-                    href="https://https://www.webnmobappssolutions.com">webnmobappssolutions.com</a>
-                </footer>
+
             </div>
+            <footer className="footer text-center"> 2022 © Admin Panel brought to you by <a
+                href="https://https://www.webnmobappssolutions.com">webnmobappssolutions.com</a>
+            </footer>
         </>
     );
 };

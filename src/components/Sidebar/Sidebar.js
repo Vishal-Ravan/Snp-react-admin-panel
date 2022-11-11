@@ -45,7 +45,7 @@ const structure = [
     link: "/app/managelocation",
     icon: <EditLocationAltIcon />,
   },
-  
+
   {
     id: 5,
     label: "Manage Parking ",
@@ -122,7 +122,7 @@ const structure = [
     id: 78,
     label: "About ",
     link: "/app/about-us",
-    icon: <ArticleIcon   />,
+    icon: <ArticleIcon />,
   },
 
 ];
